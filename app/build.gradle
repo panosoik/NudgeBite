@@ -1,0 +1,71 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+// Env var first, then local.properties: Android Studio launched from the desktop has no shell environment.
+def resolveApiKey = { String propertyName ->
+    def fromEnv = System.getenv(propertyName)
+    if (fromEnv != null && !fromEnv.isEmpty()) {
+        return fromEnv
+    }
+    def localPropsFile = rootProject.file('local.properties')
+    if (localPropsFile.exists()) {
+        def localProps = new Properties()
+        localPropsFile.withInputStream { localProps.load(it) }
+        return localProps.getProperty(propertyName, '')
+    }
+    return ''
+}
+
+android {
+    namespace 'com.panagiotisoikonomou.nudgebite'
+    compileSdk {
+        version = release(36) {
+            minorApiLevel = 1
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.panagiotisoikonomou.nudgebite"
+        minSdk 31
+        targetSdk 36
+        versionCode 2
+        versionName "1.1"
+
+        buildConfigField "String", "OPENAI_API_KEY", "\"${resolveApiKey('OPENAI_API_KEY')}\""
+
+        def googleMapsApiKey = resolveApiKey('GOOGLE_MAPS_API_KEY')
+        buildConfigField "String", "GOOGLE_MAPS_API_KEY", "\"${googleMapsApiKey}\""
+        manifestPlaceholders["GOOGLE_MAPS_API_KEY"] = googleMapsApiKey
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    buildTypes {
+        release {
+            optimization {
+                enable false
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation libs.activity.ktx
+    implementation libs.appcompat
+    implementation libs.constraintlayout
+    implementation libs.material
+    implementation libs.room.runtime
+    annotationProcessor libs.room.compiler
+    implementation libs.okhttp
+    implementation libs.play.services.maps
+    implementation libs.places
+    implementation libs.work.runtime
+    implementation libs.play.services.location
+}

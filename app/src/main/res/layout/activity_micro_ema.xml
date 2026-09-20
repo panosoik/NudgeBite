@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/micro_ema_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/micro_ema_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quick check before you decide"
+                android:textColor="@color/nb_text_primary"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="24dp"
+                android:id="@+id/micro_ema_subtitle"
+                android:text="Two quick questions, then we'll pick something."
+                android:textColor="@color/nb_text_secondary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/delivery_intent_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Planning to order?"
+                android:textColor="@color/nb_text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.panagiotisoikonomou.nudgebite.ui.components.SingleSelectList
+                android:id="@+id/delivery_intent_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:id="@+id/food_available_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Do you have food at home?"
+                android:textColor="@color/nb_text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.panagiotisoikonomou.nudgebite.ui.components.SingleSelectList
+                android:id="@+id/food_available_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.panagiotisoikonomou.nudgebite.ui.components.PrimaryButton
+        android:id="@+id/micro_ema_continue_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:enabled="false"
+        android:text="Continue" />
+
+</LinearLayout>

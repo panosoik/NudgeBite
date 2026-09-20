@@ -1,0 +1,26 @@
+# Build output
+.gradle/
+.kotlin/
+build/
+captures/
+.cxx/
+.externalNativeBuild/
+
+# Machine-specific: holds sdk.dir and the API keys the build injects
+local.properties
+
+# Signing material
+*.jks
+*.keystore
+
+# Packaged builds, which carry the injected API keys
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# IDE
+.idea/
+*.iml
+
+.DS_Store

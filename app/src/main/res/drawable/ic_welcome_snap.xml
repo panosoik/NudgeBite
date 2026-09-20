@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="56dp"
+    android:height="56dp"
+    android:viewportWidth="72"
+    android:viewportHeight="72">
+
+    <path
+        android:fillColor="@color/nb_feature_icon_tile"
+        android:pathData="M17,0L55,0A17,17 0 0 1 72,17L72,55A17,17 0 0 1 55,72L17,72A17,17 0 0 1 0,55L0,17A17,17 0 0 1 17,0Z" />
+
+    <path
+        android:fillColor="@color/nb_feature_icon_glyph"
+        android:pathData="M27.5,17L36.5,17A3.5,3.5 0 0 1 40,20.5L40,27L24,27L24,20.5A3.5,3.5 0 0 1 27.5,17Z" />
+
+    <path
+        android:fillColor="@color/nb_feature_icon_glyph"
+        android:pathData="M16,22L56,22A6,6 0 0 1 62,28L62,52A6,6 0 0 1 56,58L16,58A6,6 0 0 1 10,52L10,28A6,6 0 0 1 16,22Z" />
+
+    <path
+        android:fillColor="@color/nb_feature_icon_accent"
+        android:pathData="M51.5,28L54.5,28A1.5,1.5 0 0 1 56,29.5L56,31.5A1.5,1.5 0 0 1 54.5,33L51.5,33A1.5,1.5 0 0 1 50,31.5L50,29.5A1.5,1.5 0 0 1 51.5,28Z" />
+
+    <path
+        android:fillColor="@color/nb_feature_icon_accent"
+        android:pathData="M36,28A15,15 0 1 1 36,58A15,15 0 1 1 36,28Z" />
+    <path
+        android:fillColor="@color/nb_feature_icon_glyph"
+        android:pathData="M36,34A9,9 0 1 1 36,52A9,9 0 1 1 36,34Z" />
+    <path
+        android:fillColor="@color/nb_feature_icon_tile"
+        android:pathData="M36,38.8A4.2,4.2 0 1 1 36,47.2A4.2,4.2 0 1 1 36,38.8Z" />
+</vector>

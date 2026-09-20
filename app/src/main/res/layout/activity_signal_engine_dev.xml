@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/signal_engine_dev_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Signal engine (dev)"
+                android:textColor="@color/nb_text_primary"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="20dp"
+                android:text="Runs the JITAI pipeline once against real UsageStats plus the stubbed signals below."
+                android:textColor="@color/nb_text_secondary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/usage_access_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/nb_text_primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/grant_usage_access_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="4dp"
+                android:text="Open usage access settings"
+                android:textColor="@color/nb_primary_green"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Location zone (stub)"
+                android:textColor="@color/nb_text_primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.panagiotisoikonomou.nudgebite.ui.components.SingleSelectList
+                android:id="@+id/location_zone_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/left_workplace_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Recently left workplace (stub)"
+                android:textColor="@color/nb_text_primary"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/delivery_app_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Delivery app foregrounded (overrides real UsageStats for the button below)"
+                android:textColor="@color/nb_text_primary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Onboarding goals (stub — gates POST_DELIVERY_PREP, ORGANIZE_MEALS_PREP, EATING_OUT_GAP and the Progress goal rows)"
+                android:textColor="@color/nb_text_primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/goal_fewer_deliveries_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Fewer deliveries goal"
+                android:textColor="@color/nb_text_primary"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/goal_organize_meals_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Organize meals goal"
+                android:textColor="@color/nb_text_primary"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/goal_better_choices_out_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Better choices when eating out goal"
+                android:textColor="@color/nb_text_primary"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/goal_quick_balanced_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Quick, balanced when low on time or energy goal"
+                android:textColor="@color/nb_text_primary"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/goal_more_fruit_veg_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="More fruit &amp; veg goal"
+                android:textColor="@color/nb_text_primary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Time (overrides the real clock for the button below)"
+                android:textColor="@color/nb_text_primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.panagiotisoikonomou.nudgebite.ui.components.SingleSelectList
+                android:id="@+id/time_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" />
+
+            <com.panagiotisoikonomou.nudgebite.ui.components.PrimaryButton
+                android:id="@+id/run_engine_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Run signal engine now" />
+
+            <com.panagiotisoikonomou.nudgebite.ui.components.SecondaryButton
+                android:id="@+id/run_via_workmanager_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Run via WorkManager (one-time)" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Utilities"
+                android:textColor="@color/nb_text_secondary"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <com.panagiotisoikonomou.nudgebite.ui.components.SecondaryButton
+                android:id="@+id/reset_history_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Reset engine history (clears caps/cooldowns)" />
+
+            <com.panagiotisoikonomou.nudgebite.ui.components.SecondaryButton
+                android:id="@+id/seed_meals_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Seed sample meals (for dashboard/progress testing)" />
+
+            <com.panagiotisoikonomou.nudgebite.ui.components.SecondaryButton
+                android:id="@+id/seed_multi_week_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Seed multi-week progress data (turn on the two goal switches above first)" />
+
+            <com.panagiotisoikonomou.nudgebite.ui.components.SecondaryButton
+                android:id="@+id/seed_well_progress_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Seed six weeks of diet quality data (for the Progress graphs)" />
+
+            <com.panagiotisoikonomou.nudgebite.ui.components.SecondaryButton
+                android:id="@+id/run_water_reminder_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Run the hydration reminder check now (respects every condition)" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Day-status scenario"
+                android:textColor="@color/nb_text_primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.panagiotisoikonomou.nudgebite.ui.components.SingleSelectList
+                android:id="@+id/day_status_scenario_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp" />
+
+            <com.panagiotisoikonomou.nudgebite.ui.components.SecondaryButton
+                android:id="@+id/seed_day_status_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Seed day-status scenario" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Run output"
+                android:textColor="@color/nb_text_secondary"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/run_output"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input_field"
+                android:fontFamily="monospace"
+                android:padding="12dp"
+                android:textColor="@color/nb_text_primary"
+                android:textIsSelectable="true"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp"
+                android:text="Recommendation combos (sets the signals below then runs the engine)"
+                android:textColor="@color/nb_text_secondary"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <com.panagiotisoikonomou.nudgebite.ui.components.SecondaryButton
+                android:id="@+id/trigger_delivery_home_evening_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Trigger DELIVERY_HOME_EVENING" />
+
+            <com.panagiotisoikonomou.nudgebite.ui.components.SecondaryButton
+                android:id="@+id/trigger_supermarket_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trigger SUPERMARKET" />
+
+            <com.panagiotisoikonomou.nudgebite.ui.components.SecondaryButton
+                android:id="@+id/trigger_dinner_no_plan_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Trigger DINNER_NO_PLAN" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

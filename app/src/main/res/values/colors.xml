@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="nb_brand_green">#0A4525</color>
+
+    <color name="nb_primary_green">#4A7C59</color>
+    <color name="nb_row_selected_bg">#D7ECDD</color>
+    <color name="nb_neutral_border">#DDDDDD</color>
+    <color name="nb_input_bg">#F1F4F0</color>
+    <color name="nb_text_primary">#1A1A1A</color>
+    <color name="nb_text_secondary">#8A8A8A</color>
+    <color name="nb_dot_inactive">#DDDDDD</color>
+
+    <!-- Progress screen: always amber for below target, never red. -->
+    <color name="nb_warning_amber">#C77817</color>
+    <color name="nb_note_bg">#FBEEDD</color>
+
+    <color name="nb_segment_track">#E8EDE8</color>
+
+    <color name="nb_zone_building">#F4F1E9</color>
+    <color name="nb_zone_balanced">#EDF3EC</color>
+    <color name="nb_zone_strong">#E4EFE5</color>
+    <color name="nb_chart_guide">#CFD8CF</color>
+
+    <!-- Identity colours, not status. Fruit is not orange so it never reads as the warning amber. -->
+    <color name="nb_group_vegetables">#3E7CB1</color>
+    <color name="nb_group_fruit">#C0568E</color>
+    <color name="nb_group_whole_grains">#7C5CBF</color>
+    <color name="nb_group_legumes">#4A7C59</color>
+    <color name="nb_group_nuts_seeds">#8A9A5B</color>
+    <color name="nb_group_fish">#0B5C6B</color>
+    <color name="nb_group_red_meat">#6E6E6E</color>
+    <color name="nb_group_fast_food">#A6A6A6</color>
+
+    <!-- The no-red rule covers scores and targets only, not destructive actions. -->
+    <color name="nb_destructive_red">#C0392B</color>
+    <color name="nb_row_selected_bg_red">#F5DBD8</color>
+
+    <color name="nb_feature_icon_tile">#C8DDD0</color>
+    <color name="nb_feature_icon_glyph">#416B4D</color>
+    <color name="nb_feature_icon_accent">#85B27A</color>
+</resources>

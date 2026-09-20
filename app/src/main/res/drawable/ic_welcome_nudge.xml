@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="56dp"
+    android:height="56dp"
+    android:viewportWidth="72"
+    android:viewportHeight="72">
+
+    <path
+        android:fillColor="@color/nb_feature_icon_tile"
+        android:pathData="M17,0L55,0A17,17 0 0 1 72,17L72,55A17,17 0 0 1 55,72L17,72A17,17 0 0 1 0,55L0,17A17,17 0 0 1 17,0Z" />
+
+    <path
+        android:fillColor="@color/nb_feature_icon_glyph"
+        android:pathData="M36,14.4C32.8,14.4 30.2,17 30.2,20.2L30.2,20.8C24.5,23 20,28.2 20,34.4L20,44.6C20,46.5 21.5,48 23.4,48L48.6,48C50.5,48 52,46.5 52,44.6L52,34.4C52,28.2 47.5,23 41.8,20.8L41.8,20.2C41.8,17 39.2,14.4 36,14.4Z" />
+
+    <path
+        android:fillColor="@color/nb_feature_icon_glyph"
+        android:pathData="M36,47.5A7,5 0 1 1 36,57.5A7,5 0 1 1 36,47.5Z" />
+
+    <path
+        android:fillColor="@color/nb_feature_icon_accent"
+        android:pathData="M12.7,27.8L16.3,27.8A1.7,1.7 0 0 1 18,29.5A1.7,1.7 0 0 1 16.3,31.2L12.7,31.2A1.7,1.7 0 0 1 11,29.5A1.7,1.7 0 0 1 12.7,27.8Z" />
+    <path
+        android:fillColor="@color/nb_feature_icon_accent"
+        android:pathData="M55.7,27.8L59.3,27.8A1.7,1.7 0 0 1 61,29.5A1.7,1.7 0 0 1 59.3,31.2L55.7,31.2A1.7,1.7 0 0 1 54,29.5A1.7,1.7 0 0 1 55.7,27.8Z" />
+</vector>
