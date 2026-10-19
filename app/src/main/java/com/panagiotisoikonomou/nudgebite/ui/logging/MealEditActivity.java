@@ -92,6 +92,7 @@ public class MealEditActivity extends AppCompatActivity {
     private EditText dishNameInput;
     private TextView macroSummary;
     private SingleSelectList mealSlotSelect;
+    private TextView mealSourceLabel;
     private SingleSelectList mealSourceSelect;
     private LinearLayout ingredientsContainer;
     private PrimaryButton saveButton;
@@ -114,6 +115,7 @@ public class MealEditActivity extends AppCompatActivity {
         dishNameInput = findViewById(R.id.dish_name_input);
         macroSummary = findViewById(R.id.macro_summary);
         mealSlotSelect = findViewById(R.id.meal_slot_select);
+        mealSourceLabel = findViewById(R.id.meal_source_label);
         mealSourceSelect = findViewById(R.id.meal_source_select);
         ingredientsContainer = findViewById(R.id.ingredients_container);
         saveButton = findViewById(R.id.save_button);
@@ -201,6 +203,8 @@ public class MealEditActivity extends AppCompatActivity {
                 }
             }
         });
+        mealSourceLabel.setVisibility(View.VISIBLE);
+        mealSourceSelect.setVisibility(View.VISIBLE);
     }
 
     @Nullable
